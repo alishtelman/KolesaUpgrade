@@ -1,6 +1,6 @@
 <?php
 
-class FirstCest
+class ArticlePageCest
 {
     public function _before(AcceptanceTester $I)
     {
