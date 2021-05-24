@@ -7,7 +7,7 @@ class ArticlePageCest
     }
 
     // tests
-    public function tryToTest(AcceptanceTester $I)
+    public function ArticlePageTest(AcceptanceTester $I)
     {
         $I->amOnPage('');
         $I->scrollTo('#homefeatured > li:nth-child(2) > div > div.right-block > h5');
