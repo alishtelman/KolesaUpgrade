@@ -5,7 +5,7 @@ class SearchCest
    
 
     // tests
-    public function tryToTest(FunctionalTester $I)
+    public function SearchTest(FunctionalTester $I)
     {
         $I->amOnPage('');
         $I->seeElement('#search_query_top');
