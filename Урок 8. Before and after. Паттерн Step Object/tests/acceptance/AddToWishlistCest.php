@@ -11,9 +11,9 @@ class AddToWishlistCest
      * Метод, который выполняется после каждого теста
      */
     public function _after(\AcceptanceTester $I){
-        $I->click('//*[@id="wishlist_34128"]/td[6]/a/i');
+        $I->click(WishListPage::$DeleteWishList); 
         $I->wait(3);
-        $I->click('//*[@id="header"]/div[2]/div/div/nav/div[2]/a');
+        $I->click(WishListPage::$SignOut);
 
     }
     /**
@@ -22,10 +22,10 @@ class AddToWishlistCest
     public function _before(\AcceptanceTester $I){
         $I->amOnPage('');
         $I->click(WishListPage::$SignInButton);
-        $I->waitForElementVisible('//*[@id="login_form"]');
-        $I->fillField('//*[@id="email"]', 'telmanalisher@gmail.com');
-        $I->fillField('//*[@id="passwd"]', 'Fkbithghjj1998');
-        $I->click('//*[@id="SubmitLogin"]');
+        $I->waitForElementVisible(WishListPage::$AuthForm);
+        $I->fillField(WishListPage::$EmailAuth, 'telmanalisher@gmail.com');
+        $I->fillField(WishListPage::$PassAuth, 'Fkbithghjj1998');
+        $I->click(WishListPage::$SubmitAuthButton);
 
     }
     public const PRODUCTS_NMB=2;

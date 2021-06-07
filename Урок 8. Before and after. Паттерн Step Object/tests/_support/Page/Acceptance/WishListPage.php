@@ -57,4 +57,28 @@ class WishListPage
      * Селектор строки в таблице, где указано количество товаров
      */
     public static $NumberOfOrders = '//*[@id="wishlist_34128"]/td[2]';
+    /**
+     * Селектор очищения списка избранного
+     */
+    public static $DeleteWishList = '//*[@id="wishlist_34128"]/td[6]/a/i';
+    /**
+     * Локатор кнопки выхода из аккаунта
+     */
+    public static $SignOut = '//*[@id="header"]/div[2]/div/div/nav/div[2]/a';
+    /**
+     * Локатор формы авторизации
+     */
+    public static $AuthForm = '//*[@id="login_form"]';
+    /**
+     * Локатор ввода имейла
+     */
+    public static $EmailAuth = '//*[@id="email"]';
+    /**
+     * Локатор ввода пароля
+     */
+    public static $PassAuth = '//*[@id="passwd"]';
+    /**
+     * Локатор кнопки Submit в форме авторизации
+     */
+    public static $SubmitAuthButton = '//*[@id="SubmitLogin"]';
 }
